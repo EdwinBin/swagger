@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiParam;
 @Api(value = "/ProductController",description = "class类实现",tags = "ProductController")
 public class ProductController {
 
-    @RequestMapping(value = "sadsa/", method = RequestMethod.POST)
+    @RequestMapping(value = "get/", method = RequestMethod.POST)
     @ApiOperation(value = "根据id获取产品信息", notes = "ID为Long类型", httpMethod = "POST", response = Product.class)
     public String get(@RequestParam("id") Long id,@RequestParam("ids") Long ids) {
         Product product = new Product();
